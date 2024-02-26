@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>home</title>
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="icon" href="images/gusto.png" type="images/gusto.png">
+<link rel="shortcut icon" href="images/gusto.png" type="images/gusto.png">
+</head>
+<body>
+   
+<header class="header">
+   <section class="flex">
+      <a href="home.html" class="logo">Autenticidade em cada pedaço!🍕</a>
+      <nav class="navbar">
+         <a href="home.html">HOME</a>
+      </nav>
+
+      <div class="icons">
+         <a href="search.html"><i class=""></i></a>
+         <a href="cart.html"><i class=""></i><span></span></a>
+         <div id="user-btn" class=""></div>
+         <div id="menu-btn" class=""></div>
+      </div>
+
+      <div class="profile">
+         <p class="name">Daniel Oliveira</p>
+         <div class="flex">
+            <a href="profile.html" class="btn">profile</a>
+            <a href="#" class="delete-btn">logout</a>
+         </div>
+         <p class="account"><a href="login.html">login</a> or <a href="register.html">register</a></p>
+      </div>
+   </section>
+</header>
+
+<section class="home">
+   <div class="swiper home-slider">
+      <div class="swiper-wrapper">
+         <div class="swiper-slide slide">
+            <div class="content">
+               <h3>pizza deliziosa</h3>
+               <a href="" class="btn"></a>
+            </div>
+            <div class="image">
+               <img src="images/pizzaaa.jpg" alt="">
+            </div>
+         </div>
+      </div>
+      <div class="swiper-pagination"></div>
+   </div>
+</section>
+
+<footer class="footer">
+   <section class="box-container">
+      <div class="box">
+         <img src="images/clock-icon.png" alt="">
+         <h3>Horarios</h3>
+         <p>18:00 à 23:59 </p>
+      </div>
+
+
+      <div class="box">
+         <img src="images/insstagram.png" alt="">
+         <h3>Instagram</h3>
+         <a href="https://www.instagram.com/gustodellepizza/">@gustodellepizza</a>
+      </div>
+
+      <div class="box">
+         <img src="images/whatsapp.png" alt="">
+
+         <h3>Nosso What's app</h3>
+         <a href="https://api.whatsapp.com/send/?phone=24981251819&text&type=phone_number&app_absent=0">+55 24 98125 1819</a>
+      </div>
+
+   </section>
+
+   <div class="credit">&copy; copyright @ 2024 by <span>Miguel Araujo</span> | all rights reserved!</div>
+
+</footer>
+
+<div class="loader">
+   <img src="images/Me3.gif" alt="">
+</div>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
+<script>
+
+var swiper = new Swiper(".home-slider", {
+   loop:true,
+   grabCursor:true,
+   effect: "flip",
+   pagination: {
+      el: ".swiper-pagination",
+      clickable:true,
+   },
+});
+
+</script>
+
+</body>
+</html>
